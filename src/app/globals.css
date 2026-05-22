@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@theme {
+  --color-gold: #FDCA57;
+  --color-teal: #43C4CC;
+  --color-void: #0F0F1A;
+  --color-card: #1a1a2e;
+  --color-border: #2a2a3e;
+  --color-muted: #999999;
+  --color-dim: #555555;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0F0F1A;
+  background-image: radial-gradient(#FDCA57 0.5px, transparent 0.5px);
+  background-size: 32px 32px;
+  background-attachment: fixed;
+}
+
+/* Gold shimmer animation for holder badge */
+@keyframes shimmer {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+.animate-shimmer {
+  animation: shimmer 2s ease-in-out infinite;
+}
+
+/* Gold glow pulse for input focus */
+@keyframes glow-pulse {
+  0%, 100% { box-shadow: 0 0 20px rgba(253, 202, 87, 0.2); }
+  50% { box-shadow: 0 0 30px rgba(253, 202, 87, 0.3); }
+}
+
+.animate-glow {
+  animation: glow-pulse 2s ease-in-out infinite;
+}
+
+/* Scroll indicator bounce */
+@keyframes bounce-slow {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(8px); }
+}
+
+.animate-bounce-slow {
+  animation: bounce-slow 2s ease-in-out infinite;
+}
