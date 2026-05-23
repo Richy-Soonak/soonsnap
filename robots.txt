@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /soonsnap/
+
+Sitemap: https://soonsnap.richysoonak.com/soonsnap/sitemap.xml
