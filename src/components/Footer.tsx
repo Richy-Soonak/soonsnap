@@ -27,12 +27,12 @@ function Logo() {
 export default function Footer() {
   return (
     <footer className="border-t border-border bg-[#0a0a14] px-5 pt-16 pb-8">
-      <div className="mx-auto grid max-w-7xl gap-10 md:grid-cols-4">
+      <div className="mx-auto grid max-w-7xl gap-10 grid-cols-2 md:grid-cols-4">
         {/* Col 1 — Brand */}
-        <div>
+        <div className="col-span-2 md:col-span-1">
           <Logo />
           <p className="mt-3 text-xs text-[#555]">A SOONAK product</p>
-          <p className="mt-2 max-w-[220px] text-sm text-[#999]">
+          <p className="mt-2 max-w-sm text-sm text-[#999]">
             Turn any website into a polished, animated promo video — in minutes.
           </p>
         </div>

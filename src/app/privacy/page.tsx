@@ -1,8 +1,16 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Privacy Policy",
+  description: "SoonSnap Privacy Policy — how we collect, use, and protect your data.",
+  robots: { index: true, follow: true },
+};
+
 export default function PrivacyPage() {
   return (
     <main className="min-h-screen bg-void text-[#F8F9FC]">
       <div className="max-w-3xl mx-auto px-6 py-20">
-        <h1 className="text-4xl font-bold mb-2" style={{ fontFamily: 'var(--font-display)' }}>
+        <h1 className="text-3xl font-bold mb-2 sm:text-4xl" style={{ fontFamily: 'var(--font-display)' }}>
           Privacy Policy
         </h1>
         <p className="text-[#555] text-sm mb-10">Last updated: May 2026</p>
@@ -56,31 +64,31 @@ export default function PrivacyPage() {
             </h2>
             <div className="bg-card border border-border rounded-2xl p-6">
               <div className="space-y-3 text-sm">
-                <div className="flex justify-between border-b border-border pb-2">
+                <div className="flex flex-col gap-1 border-b border-border pb-2 sm:flex-row sm:justify-between sm:gap-0">
                   <span className="text-[#F8F9FC]">Account info (email, tier)</span>
                   <span>Duration of account</span>
                 </div>
-                <div className="flex justify-between border-b border-border pb-2">
+                <div className="flex flex-col gap-1 border-b border-border pb-2 sm:flex-row sm:justify-between sm:gap-0">
                   <span className="text-[#F8F9FC]">Solana wallet address</span>
                   <span>Duration of account (hashed)</span>
                 </div>
-                <div className="flex justify-between border-b border-border pb-2">
+                <div className="flex flex-col gap-1 border-b border-border pb-2 sm:flex-row sm:justify-between sm:gap-0">
                   <span className="text-[#F8F9FC]">Rendered videos (MP4)</span>
                   <span>7 days, then auto-deleted</span>
                 </div>
-                <div className="flex justify-between border-b border-border pb-2">
+                <div className="flex flex-col gap-1 border-b border-border pb-2 sm:flex-row sm:justify-between sm:gap-0">
                   <span className="text-[#F8F9FC]">Captured site assets</span>
                   <span>30 days, then auto-deleted</span>
                 </div>
-                <div className="flex justify-between border-b border-border pb-2">
+                <div className="flex flex-col gap-1 border-b border-border pb-2 sm:flex-row sm:justify-between sm:gap-0">
                   <span className="text-[#F8F9FC]">Version thumbnails</span>
                   <span>30 days, then auto-deleted</span>
                 </div>
-                <div className="flex justify-between border-b border-border pb-2">
+                <div className="flex flex-col gap-1 border-b border-border pb-2 sm:flex-row sm:justify-between sm:gap-0">
                   <span className="text-[#F8F9FC]">Usage logs</span>
                   <span>30 days</span>
                 </div>
-                <div className="flex justify-between">
+                <div className="flex flex-col gap-1 sm:flex-row sm:justify-between sm:gap-0">
                   <span className="text-[#F8F9FC]">Payment records</span>
                   <span>Per Stripe&apos;s retention policy</span>
                 </div>
@@ -132,15 +140,15 @@ export default function PrivacyPage() {
             </h2>
             <div className="bg-card border border-border rounded-2xl p-6 text-sm">
               <div className="space-y-3">
-                <div className="flex justify-between border-b border-border pb-2">
+                <div className="flex flex-col gap-1 border-b border-border pb-2 sm:flex-row sm:justify-between sm:gap-0">
                   <span className="text-[#F8F9FC]">Session token</span>
                   <span>Authentication — Until logout or 30 days</span>
                 </div>
-                <div className="flex justify-between border-b border-border pb-2">
+                <div className="flex flex-col gap-1 border-b border-border pb-2 sm:flex-row sm:justify-between sm:gap-0">
                   <span className="text-[#F8F9FC]">Preferences</span>
                   <span>Theme, settings — 1 year</span>
                 </div>
-                <div className="flex justify-between">
+                <div className="flex flex-col gap-1 sm:flex-row sm:justify-between sm:gap-0">
                   <span className="text-[#F8F9FC]">AdSense cookies</span>
                   <span>Ad delivery (Tier 1 only) — Per Google&apos;s policy</span>
                 </div>

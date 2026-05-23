@@ -1,0 +1,16 @@
+{
+  "name": "SoonSnap",
+  "short_name": "SoonSnap",
+  "description": "Turn any website into a polished, animated promo video in minutes.",
+  "start_url": "/soonsnap/",
+  "display": "standalone",
+  "background_color": "#0F0F1A",
+  "theme_color": "#FDCA57",
+  "icons": [
+    {
+      "src": "/soonsnap/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

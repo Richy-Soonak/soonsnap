@@ -104,6 +104,15 @@ export default function Navbar() {
         </button>
       </div>
 
+      {/* Mobile overlay */}
+      {mobileOpen && (
+        <div
+          className="fixed inset-0 z-40 bg-black/60 backdrop-blur-sm md:hidden"
+          onClick={() => setMobileOpen(false)}
+          aria-hidden="true"
+        />
+      )}
+
       {/* Mobile panel */}
       <AnimatePresence>
         {mobileOpen && (

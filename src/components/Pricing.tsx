@@ -39,6 +39,9 @@ export default function Pricing() {
         <h2 className="text-3xl font-bold md:text-4xl">
           Simple Pricing. Real Utility.
         </h2>
+        <p className="mt-4 text-[#666]">
+          Two free tiers. One paid. No tricks.
+        </p>
       </motion.div>
 
       <div className="mx-auto mt-14 grid max-w-5xl items-start gap-6 md:grid-cols-3">
@@ -78,7 +81,7 @@ export default function Pricing() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.5, delay: 0.1 }}
-          className="relative scale-[1.03] rounded-2xl border-2 border-gold bg-void p-8 shadow-[0_0_40px_rgba(253,202,87,0.15)]"
+          className="relative rounded-2xl border-2 border-gold bg-void p-8 shadow-[0_0_40px_rgba(253,202,87,0.15)] md:scale-[1.03]"
         >
           <span className="inline-block rounded-lg border border-gold/30 bg-gold/15 px-3 py-1 text-xs font-semibold text-gold">
             SOONAK HOLDER

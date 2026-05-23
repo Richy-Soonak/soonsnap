@@ -35,7 +35,7 @@ function HeroLogo() {
 
 export default function Hero() {
   return (
-    <section className="relative flex min-h-screen min-h-[600px] flex-col items-center justify-center px-5 pt-20 text-center">
+    <section className="relative flex min-h-[600px] flex-col items-center justify-center px-5 pt-20 text-center md:min-h-screen">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -49,7 +49,7 @@ export default function Hero() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.15 }}
-        className="mx-auto max-w-3xl text-5xl font-bold leading-tight tracking-tight md:text-[56px]"
+        className="mx-auto max-w-3xl text-3xl font-bold leading-tight tracking-tight sm:text-4xl md:text-[56px]"
       >
         Turn Any Website Into a Video
       </motion.h1>
@@ -70,10 +70,10 @@ export default function Hero() {
         transition={{ duration: 0.6, delay: 0.45 }}
         className="relative mt-10 w-full max-w-[580px]"
       >
-        <div className="flex h-14 items-center rounded-2xl border border-border bg-card px-4 focus-within:border-gold/50 focus-within:animate-glow">
+        <div className="flex h-14 flex-col items-stretch gap-2 rounded-2xl border border-border bg-card px-4 py-3 focus-within:border-gold/50 focus-within:animate-glow sm:h-14 sm:flex-row sm:gap-0 sm:py-0">
           {/* Globe icon */}
           <svg
-            className="mr-3 h-5 w-5 shrink-0 text-[#999]"
+            className="mr-3 hidden h-5 w-5 shrink-0 text-[#999] sm:block"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -95,7 +95,7 @@ export default function Hero() {
             placeholder="https://your-website.com"
             className="flex-1 bg-transparent text-sm text-[#F8F9FC] outline-none placeholder:text-[#555]"
           />
-          <button className="ml-2 shrink-0 rounded-xl bg-gold px-5 py-2 text-sm font-semibold text-void transition-colors hover:bg-gold/90">
+          <button className="w-full rounded-xl bg-gold px-5 py-2 text-sm font-semibold text-void transition-colors hover:bg-gold/90 sm:ml-2 sm:w-auto sm:shrink-0">
             Snap it →
           </button>
         </div>

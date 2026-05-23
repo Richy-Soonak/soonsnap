@@ -1,8 +1,16 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Terms of Service",
+  description: "SoonSnap Terms of Service — rules, tiers, and policies for using SoonSnap.",
+  robots: { index: true, follow: true },
+};
+
 export default function TermsPage() {
   return (
     <main className="min-h-screen bg-void text-[#F8F9FC]">
       <div className="max-w-3xl mx-auto px-6 py-20">
-        <h1 className="text-4xl font-bold mb-2" style={{ fontFamily: 'var(--font-display)' }}>
+        <h1 className="text-3xl font-bold mb-2 sm:text-4xl" style={{ fontFamily: 'var(--font-display)' }}>
           Terms of Service
         </h1>
         <p className="text-[#555] text-sm mb-10">Last updated: May 2026</p>

@@ -12,7 +12,7 @@ export default function VideoShowcase() {
         transition={{ duration: 0.6 }}
       >
         <p className="mb-3 text-xs font-semibold uppercase tracking-widest text-teal">
-          See it in action
+          SEE IT IN ACTION
         </p>
         <h2 className="mx-auto max-w-2xl text-3xl font-bold md:text-4xl">
           Watch This Page Become a Video
